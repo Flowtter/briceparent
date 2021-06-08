@@ -1,0 +1,98 @@
+.container {
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 3px;
+    z-index: 1;
+    height: 100vh;
+    top: 5vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.introduction {
+    margin: 0;
+    top: 50%;
+    // 
+    display: block;
+    width: 42vw;
+    margin-left: auto;
+    margin-right: auto;
+    .text {
+        .line {
+            height: 8vw;
+            display: flex;
+            margin-top: -1vh;
+            .word {
+                display: block;
+                padding-right: 1vw;
+            }
+        }
+        h1 {
+            font-size: 5vw;
+        }
+    }
+}
+
+.cross>svg {
+    width: 40%;
+    position: relative;
+    transform: translate(80%, -115%);
+}
+
+@media (max-width: 768px) {
+    .introduction {
+        h1 {
+            text-shadow: 0 -0.025em 0 #fff, 0 0.075em 0.05em #2e2e2e;
+        }
+    }
+}
+
+@media (min-width: 2800px) {
+    .introduction {
+        h1 {
+            text-shadow: 0 -3px 0 #fff, 0 8px 6px #2e2e2e;
+        }
+    }
+}
+
+@media (min-width: 2400px) {
+    .introduction {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 1300px) {
+    .introduction {
+        transform: translate(0px, -65px);
+        width: 45vw;
+        .text {
+            .line {
+                height: 7vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .introduction {
+        transform: translate(0px, 50px);
+        width: 45vw;
+        // width: 290px;
+    }
+}
+
+@media (max-width: 540px) {
+    .introduction {
+        width: 70vw;
+        transform: translate(0px, 30px);
+        .text {
+            .line {
+                height: 12vw;
+            }
+            h1 {
+                font-size: 8vw;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

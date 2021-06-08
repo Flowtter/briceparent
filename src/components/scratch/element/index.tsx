@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable no-nested-ternary */
 
 import React from 'react';
@@ -8,8 +8,7 @@ import { Vector2 } from '../../../types/utils';
 import styles from './element.module.scss';
 
 type Props = {
-	svg: string;
-	alt: string;
+	svg: any;
 	startingPosition: Vector2;
 	value?: string;
 
@@ -43,14 +42,14 @@ export default function Element(props: Props) {
 	}
 
 	return (
-		<img
+		<div
 			id="scratch"
-			alt={props.alt}
-			src={props.svg}
 			className={!props.isStartingPoint && props.isActive ? `${styles.element} ${styles.animate}` : props.try ? `${styles.element} ${styles.try}` : `${styles.element}`}
 			style={{ left: props.startingPosition.x, top: props.startingPosition.y }}
 			onClick={toggleClass}
-		/>
+		>
+			{props.svg}
+		</div>
 	);
 }
 

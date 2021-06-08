@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<svg enableBackground="new 0 0 512 512" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px">
+    <g id="screw">
+        <rect fill="#8D8E8C" height="45" width="45" x="78" y="407" />
+        <rect fill="#999999" height="3" width="30" x="85" y="404" />
+        <rect fill="#8D8E8C" height="362" width="9" x="96" y="42" id="test" />
+    </g>
+
+    <g id="body">
+        <rect fill="#282828" height="60" width="410" x="69" y="452" />
+        <rect fill="#CDCCCC" height="380" width="15" x="69" y="57" />
+        <rect fill="#CDCCCC" height="15" width="380" x="84" y="437" />
+        <rect fill="#323232" height="15" width="15" x="69" y="437" />
+        <rect fill="#323232" height="15" width="15" x="464" y="437" />
+        <rect fill="#CDCCCC" height="380" width="15" x="464" y="57" />
+        <rect fill="#CDCCCC" height="15" width="380" x="84" y="42" />
+        <rect fill="#323232" height="15" width="15" x="69" y="42" />
+        <rect fill="#323232" height="15" width="15" x="464" y="42" />
+    </g>
+
+    <g id="corner">
+        <g>
+            <rect fill="#5C5C5C" height="50" width="5" x="84" y="387" />
+            <rect fill="#5C5C5C" height="5" width="50" x="84" y="432" />
+            <rect fill="#5C5C5C" height="58.234" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -261.217 197.1606)" width="6.751" x="104.027" y="384.803" />
+        </g>
+        <g>
+            <rect fill="#5C5C5C" height="5" width="50" x="414" y="432" />
+            <rect fill="#5C5C5C" height="50" width="5" x="459" y="387" />
+            <rect fill="#5C5C5C" height="58.234" transform="matrix(-0.707 -0.7072 0.7072 -0.707 460.1782 1017.834)" width="6.751" x="437.544" y="384.48" />
+        </g>
+        <g>
+            <rect fill="#5C5C5C" height="5" width="50" x="84" y="57" />
+            <rect fill="#5C5C5C" height="50" width="5" x="84" y="57" />
+            <rect fill="#5C5C5C" height="58.234" transform="matrix(0.707 0.7072 -0.7072 0.707 88.23 -52.1695)" width="6.751" x="103.704" y="51.286" />
+        </g>
+        <g>
+            <rect fill="#5C5C5C" height="50" width="5" x="459" y="57" />
+            <rect fill="#5C5C5C" height="5" width="50" x="414" y="57" />
+            <rect fill="#5C5C5C" height="58.234" transform="matrix(-0.7072 0.707 -0.707 -0.7072 808.7977 -174.8064)" width="6.751" x="437.221" y="50.963" />
+        </g>
+    </g>
+
+    <g id="bed">
+        <rect fill="#1081B0" height="8" width="239" x="155" y="393" />
+        <rect fill="#8D8E8C" height="6" width="15" x="196" y="401" />
+        <rect fill="#8D8E8C" height="6" width="15" x="337" y="401" />
+        <rect fill="#5C5C5C" height="53" width="197" x="175" y="407" />
+    </g>
+
+    <g id="z-axis">
+
+        <rect fill="#CDCCCC" height="11" width="376" x="86" y="170" />
+        <rect fill="#8D8E8C" height="9" width="335" x="117" y="192" />
+        <rect fill="#8D8E8C" height="9" width="335" x="117" y="218" />
+        <rect fill="#323232" height="55" width="23" x="452" y="182" />
+        <rect fill="#323232" height="55" width="44" x="73" y="182" />
+        <path d="M86,248c0,2.762-1.422,5-3.727,5H71.423c-2.304,0-4.423-2.238-4.423-5v-10c0-2.761,2.119-5,4.423-5h10.851  c2.305,0,3.727,2.239,3.727,5V248z" fill="#323232" />
+        <path d="M86,182c0,2.761-1.422,5-3.727,5H71.423c-2.304,0-4.423-2.239-4.423-5v-10c0-2.761,2.119-5,4.423-5h10.851  c2.305,0,3.727,2.239,3.727,5V182z" fill="#323232" />
+        <path d="M462,248c0,2.762,1.422,5,3.727,5h10.851c2.304,0,4.423-2.238,4.423-5v-10c0-2.761-2.119-5-4.423-5h-10.851   c-2.305,0-3.727,2.239-3.727,5V248z" fill="#323232" />
+        <path d="M462,182c0,2.761,1.422,5,3.727,5h10.851c2.304,0,4.423-2.239,4.423-5v-10c0-2.761-2.119-5-4.423-5h-10.851   c-2.305,0-3.727,2.239-3.727,5V182z" fill="#323232" />
+        <rect fill="#5C5C5C" height="45" width="45" x="24" y="187" />
+
+        <polygon fill="#323232" points="69,187 23.787,187 69,176.5 " />
+        <polygon fill="#323232" points="69,232 23.787,232 69,242.5 " />
+
+        <g id="y-axis">
+            <polygon fill="#8D8E8C" points="282.833,142 271,142 273.2,138 280.785,138 " />
+
+            <path d="M277,142c0-93.596,91.242-169.333,204-169.333" fill="none" stroke="#FF0000" strokeMiterlimit="10" strokeWidth="3" />
+            <path d="M291.334,142c0-51.128,45.322-92.5,101.333-92.5" fill="none" stroke="#1E1E1E" strokeMiterlimit="10" strokeWidth="5" />
+
+            <rect fill="#CDCCCC" height="46" width="59" x="247" y="187" />
+            <rect fill="#B3B3B3" height="3" width="59" x="247" y="187" />
+            <rect fill="#5C5C5C" height="45" width="45" x="254" y="142" />
+            <rect fill="#323232" height="32" width="16" x="269" y="190" />
+            <polygon fill="#323232" points="283.688,224 270.563,224 269,222 285,222 " />
+            <rect fill="#FFCB00" height="8" width="16" x="269" y="224" />
+            <polygon fill="#FFCB00" points="271.992,232 276.906,234.938 281.82,232 " />
+
+            <rect fill="#CDCCCC" height="1" width="2" x="268" y="196" />
+            <rect fill="#CDCCCC" height="1" width="2" x="268" y="199" />
+            <rect fill="#CDCCCC" height="1" width="2" x="268" y="202" />
+            <rect fill="#CDCCCC" height="1" width="2" x="268" y="205" />
+            <rect fill="#CDCCCC" height="1" width="2" x="268" y="208" />
+
+            <rect fill="#CDCCCC" height="1" width="2" x="284" y="196" />
+            <rect fill="#CDCCCC" height="1" width="2" x="284" y="199" />
+            <rect fill="#CDCCCC" height="1" width="2" x="284" y="202" />
+            <rect fill="#CDCCCC" height="1" width="2" x="284" y="205" />
+            <rect fill="#CDCCCC" height="1" width="2" x="284" y="208" />
+
+            
+        </g>
+    </g>
+</svg>

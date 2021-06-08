@@ -19,6 +19,11 @@ function pathJoin(parts, sep) {
 function getAllTranslationInTypescriptFile(typescriptFile) {
     result = []
     var regexArray = typescriptFile.match(re);
+    if (regexArray) {
+        for (var i = 0; i < regexArray.length; i++) {
+            regexArray[i] = regexArray[i].replace('\\', '');
+        }
+    }
     return regexArray == null ? [] : regexArray;
 }
 
@@ -37,13 +42,14 @@ typeScriptArray = []
 for (var indexComplete = 0; indexComplete < completePath.length; indexComplete++) {
     for (var i = 0; i < completePath[indexComplete][0].length; i++) {
         path = pathJoin([completePath[indexComplete][1], completePath[indexComplete][0][i]]);
-        //console.log(completePath[indexComplete][1], completePath[indexComplete][0][i], path);
+        // console.log(completePath[indexComplete][1], completePath[indexComplete][0][i], path);
         tsxFILES = fs.readdirSync(path);
         tsxFILES.forEach(file => {
             if (file.includes(".tsx")) {
                 route = pathJoin([completePath[indexComplete][1], completePath[indexComplete][0][i], file]);
                 typescriptFile = fs.readFileSync(route, 'utf8');
                 typeScript = getAllTranslationInTypescriptFile(typescriptFile);
+
                 typeScript.forEach(element => {
                     if (!(typeScriptArray.includes(element))) {
                         typeScriptArray.push(element);

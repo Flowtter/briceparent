@@ -3,7 +3,44 @@
     background-color: $light-black;
     box-shadow: 0px 0px 3px $white;
     border-radius: 10px;
-    width: 35vw;
-    height: 30vh;
-    margin: 25px;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 50px;
+    // 
+    position: absolute;
+    top: 25px;
+    // left: calc(-400px - 50px);
+    // left: calc(-400px - 50px);
+    // 
+    animation: movement 5s ease;
+    animation-fill-mode: forwards;
+    //
+    overflow-x: hidden;
+    z-index: 1;
+    // opacity: 0.75;
+}
+
+@media (max-width: 780px) {
+    .board {
+        animation: unset;
+        margin: auto;
+        left: unset;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .board {
+        display: none;
+    }
+}
+
+@keyframes movement {
+    0%,
+    80% {
+        transform: none;
+    }
+    100% {
+        transform: translate(calc(400px + 50px + 25px), 0px);
+    }
 }

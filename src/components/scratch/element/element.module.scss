@@ -16,19 +16,19 @@
 @keyframes movement {
     100% {
         left: 50px;
-        top: 75px;
-        filter: drop-shadow(0px 2px 0px $white) drop-shadow(0px -1px 0px $white) drop-shadow(-1px 0px 0px $white) drop-shadow(2px 0px 0px $white) drop-shadow(3px 3px 2px black);
+        top: 70px;
+        filter: drop-shadow(0px 1px 0px $white) drop-shadow(0px -1px 0px $white) drop-shadow(-1px 0px 0px $white) drop-shadow(1px 0px 0px $white) drop-shadow(3px 3px 2px black);
     }
 }
 
 @keyframes try {
-    30% {
+    35% {
         filter: drop-shadow(3px 3px 2px black);
     }
     50% {
-        filter: drop-shadow(0px 2px 0px $white) drop-shadow(0px -1px 0px $white) drop-shadow(-1px 0px 0px $white) drop-shadow(2px 0px 0px $white) drop-shadow(3px 3px 2px black);
+        filter: drop-shadow(0px 1px 0px $white) drop-shadow(0px -1px 0px $white) drop-shadow(-1px 0px 0px $white) drop-shadow(1px 0px 0px $white) drop-shadow(3px 3px 2px black);
     }
-    70% {
+    65% {
         filter: drop-shadow(3px 3px 2px black);
     }
 }
