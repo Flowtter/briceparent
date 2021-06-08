@@ -2,7 +2,6 @@
 /* eslint-disable react/jsx-max-props-per-line */
 /* eslint-disable react/jsx-closing-bracket-location */
 /* eslint-disable no-var */
-
 import React from 'react';
 
 import { useTranslation } from 'react-i18next';
@@ -12,13 +11,11 @@ import styles from './hobbies.module.scss';
 import './styles.css';
 
 
-enum HobbyType {
-	code,
-	printer,
-	gaming
-}
-
-
+// enum HobbyType {
+// 	code,
+// 	printer,
+// 	gaming
+// }
 // type Props = {
 // 	alt: string;
 // 	svg: any;
