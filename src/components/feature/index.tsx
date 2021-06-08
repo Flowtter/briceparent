@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import prism from '../../assets/png/shape.png';
@@ -80,7 +80,7 @@ export default function Feature() {
 				<Project
 					image={prism}
 					back='prism'
-					alt={t('prism\s logo')}
+					alt={t('prism\'s logo')}
 					url='https://github.com/prismocr/ocr'
 					title={t('Prism OCR')}
 					description='Prism is an efficient OCR written in C.'

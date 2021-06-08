@@ -58,6 +58,7 @@
 }
 
 .column {
+    flex: 0 0 33%;
     h2 {
         font-size: 2em !important;
     }
@@ -70,7 +71,6 @@
         color: $dark-black;
         margin: 10px 0px 10px 0px;
     }
-    flex: 0 0 33%;
 }
 
 .button {

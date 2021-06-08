@@ -19,14 +19,14 @@ enum HobbyType {
 }
 
 
-type Props = {
-	alt: string;
-	svg: any;
-	animationName: string;
-	title: string;
-	description: string;
-	type: HobbyType;
-};
+// type Props = {
+// 	alt: string;
+// 	svg: any;
+// 	animationName: string;
+// 	title: string;
+// 	description: string;
+// 	type: HobbyType;
+// };
 
 function Gaming() {
 	const { t } = useTranslation();
