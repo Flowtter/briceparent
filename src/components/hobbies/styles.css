@@ -171,7 +171,7 @@
         transform: translate(-60px, 200%);
     }
     #overwatch>svg {
-        animation: token-phone 20s step-end infinite reverse;
+        animation: token-phone 20s step-end infinite reverse, nape 20s infinite linear;
     }
     #overwatch-blinker>svg {
         transform: translate(-22px, 40px);

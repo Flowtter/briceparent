@@ -79,6 +79,9 @@
         width: 45vw;
         // width: 290px;
     }
+    .cross>svg {
+        transform: translate(80%, -130%);
+    }
 }
 
 @media (max-width: 540px) {
@@ -87,12 +90,15 @@
         transform: translate(0px, 30px);
         .text {
             .line {
-                height: 12vw;
+                height: 18vw;
             }
             h1 {
                 font-size: 8vw;
                 text-overflow: ellipsis;
             }
         }
+    }
+    .cross>svg {
+        transform: translate(80%, calc(-182% + 8vw));
     }
 }

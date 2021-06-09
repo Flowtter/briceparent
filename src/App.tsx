@@ -5,6 +5,8 @@ import Contact from './components/contact';
 import Feature from './components/feature';
 import Waves from './components/waves';
 
+import './styles.css';
+
 function App() {
 	return (
 		<div id='body'>

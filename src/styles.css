@@ -1,0 +1,5 @@
+#body {
+    overflow: -moz-scrollbars-vertical;
+    overflow-x: hidden;
+    overflow-y: auto;
+}

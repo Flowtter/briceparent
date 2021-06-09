@@ -19,7 +19,7 @@ export default function Contact() {
 						<h2>{t('Let\'s start a project')}</h2>
 					</div>
 					<div className={styles.column}>
-						<h4>{t('Would you like to work together?')}<br />{t('We should get in touch then!')}</h4>
+						<p>{t('Would you like to work together?')}<br />{t('We should get in touch then!')}</p>
 					</div>
 					<div className={styles.column}>
 						<a href="mailto:briceparent.it@gmail.com">
@@ -27,7 +27,6 @@ export default function Contact() {
 						</a>
 					</div>
 				</div>
-				{/* <button className={styles.button} type="button">{t('My resume')}</button> */}
 				<h1>{t('Contact me!')}</h1>
 				<div className={styles.contact}>
 					<a href="mailto:briceparent.it@gmail.com"><img src={mail} alt="mail" /></a>

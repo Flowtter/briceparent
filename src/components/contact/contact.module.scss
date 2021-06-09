@@ -21,11 +21,11 @@
         align-items: center;
         margin-bottom: 5vh;
         img {
-            margin-left: 25px;
-            margin-right: 25px;
-            max-width: 65px;
-            min-width: 45px;
-            width: 5vw;
+            margin-left: 20px;
+            margin-right: 20px;
+            max-width: 45px;
+            min-width: 35px;
+            width: 3vw;
         }
     }
     .button {
@@ -46,7 +46,7 @@
     margin-bottom: -35px;
     background-color: white;
     border-radius: 6px;
-    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px $light-black;
+    box-shadow: 0 3px 20px rgba(233, 240, 243, 0.5), 0 0 0 1px $light-black;
     text-align: center;
     height: 100%;
     //
@@ -62,12 +62,14 @@
     h2 {
         font-size: 2em !important;
     }
-    h4 {
+    p {
+        text-align: justify center;
         font-size: 1.5em !important;
         line-height: 1.5em !important;
+        font-weight: bold;
     }
     h2,
-    h4 {
+    p {
         color: $dark-black;
         margin: 10px 0px 10px 0px;
     }
@@ -105,12 +107,20 @@
         h2 {
             display: none;
         }
-        h4 {
+        p {
             font-size: 1.2em !important;
             line-height: 1.2em !important;
         }
     }
     .button {
         display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .column {
+        p {
+            font-size: 0.8em !important;
+        }
     }
 }

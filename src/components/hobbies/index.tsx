@@ -6,24 +6,9 @@ import React from 'react';
 
 import { useTranslation } from 'react-i18next';
 
-
 import styles from './hobbies.module.scss';
 import './styles.css';
 
-
-// enum HobbyType {
-// 	code,
-// 	printer,
-// 	gaming
-// }
-// type Props = {
-// 	alt: string;
-// 	svg: any;
-// 	animationName: string;
-// 	title: string;
-// 	description: string;
-// 	type: HobbyType;
-// };
 
 function Gaming() {
 	const { t } = useTranslation();
@@ -38,7 +23,7 @@ function Gaming() {
 			{mac}
 			<div className={styles.text}>
 				<h1 className={styles.title}>{title}</h1>
-				<h3>{description}</h3>
+				<p>{description}</p>
 			</div>
 		</div>
 	);
@@ -56,11 +41,11 @@ function Coding() {
 				<div className={styles.scanlines} />
 				<p className={styles.line1}>{t('$ cat hello.txt')}<span className={styles.cursor1}>_</span></p>
 				<p className={styles.line2}>{t('Hello friend!')}<span className={styles.cursor2}>_</span></p>
-				<p className={styles.line3}>{t('I am Brice!')}<span className={styles.cursor3}>_</span></p>
+				<p className={styles.line3}>{t('I\'m Brice!')}<span className={styles.cursor3}>_</span></p>
 			</div>
 			<div className={styles.text}>
 				<h1 className={styles.title}>{title}</h1>
-				<h3>{description}</h3>
+				<p>{description}</p>
 			</div>
 		</div>
 	);
@@ -68,7 +53,7 @@ function Coding() {
 
 function Printing() {
 	const { t } = useTranslation();
-	const title = t('3D printing');
+	const title = t('3D Printing');
 	const description = t('3D printing is a hobby that I have enjoyed doing for a few years now. I have bought one in 2018, since then I print mechanical parts from time to time.');
 	return (
 		<div className={styles.hobby}>
@@ -78,7 +63,7 @@ function Printing() {
 			{printer}
 			<div className={styles.text}>
 				<h1 className={styles.title}>{title}</h1>
-				<h3>{description}</h3>
+				<p>{description}</p>
 			</div>
 		</div>
 	);

@@ -6,7 +6,7 @@ import './styles.css';
 
 export default function Waves() {
 	return (
-		<div>
+		<div className={styles.container}>
 			<WavesSvg className={styles.waves} />
 			<div className={styles.otters}>
 				{otterBaby}

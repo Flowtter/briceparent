@@ -40,17 +40,20 @@
         font-family: 'Source Sans Pro', sans-serif;
         letter-spacing: initial;
         color: $hard-white;
-        text-shadow: 0 -1px 0 #fff, 0 2px 1px #2e2e2e;
+        text-shadow: none;
         text-align: center;
         font-size: 2em;
         margin-top: -3%;
+        font-weight: bold;
     }
-    h3 {
+    p {
         font-family: 'Source Sans Pro', sans-serif;
         margin-top: -50px;
-        color: $dark-blue-black;
-        text-shadow: 0 -0.035em 0 #ddddddd0, 0 1px 1px #222;
+        color: #1e272e;
+        text-shadow: none;
         font-size: 1.2em;
+        font-weight: bolder;
+        text-align: justify;
     }
     .subtitle {
         display: none;
@@ -58,13 +61,13 @@
 }
 
 .textContainer {
-    animation: erase 10s infinite linear;
+    animation: erase 10s 0.125s infinite linear;
     z-index: 5;
     font-size: 0.95em;
     position: absolute;
     width: 120px;
     height: 80px;
-    transform: translate(60px, -32px);
+    transform: translate(60px, -42px);
     p {
         margin: 2px;
         text-align: left;
@@ -72,6 +75,8 @@
         white-space: normal;
         overflow: hidden;
         width: 0;
+        font-size: 1.1em;
+        font-family: 'Source Sans Pro', sans-serif;
     }
     span {
         color: #fff;
@@ -212,7 +217,10 @@
 }
 
 @keyframes type {
-    5%,
+    10% {
+        width: 0em;
+    }
+    10%,
     100% {
         width: 17em;
     }
@@ -244,7 +252,7 @@
     88% {
         opacity: 1;
     }
-    98%,
+    95%,
     100% {
         opacity: 0;
     }

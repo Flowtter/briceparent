@@ -49,7 +49,7 @@ function Project(props: Props) {
 		<div className={styles.project}>
 			<div className={styles.text}>
 				<h1><a href={props.url} target="_blank" rel="noreferrer">{props.title}</a></h1>
-				<h3 className={styles.description}>{props.description}</h3>
+				<p className={styles.description}>{props.description}</p>
 			</div>
 			<a href={props.url} target="_blank" rel="noreferrer">
 				<div className={styles.first}>
@@ -61,7 +61,7 @@ function Project(props: Props) {
 					</div>
 				</div>
 			</a>
-			<h3 className={styles.subdescription}>{props.description}</h3>
+			<p className={styles.subdescription}>{props.description}</p>
 		</div>
 
 	);
