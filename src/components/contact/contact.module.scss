@@ -46,7 +46,7 @@
     margin-bottom: -35px;
     background-color: white;
     border-radius: 6px;
-    box-shadow: 0 3px 20px rgba(233, 240, 243, 0.5), 0 0 0 1px $light-black;
+    box-shadow: 0 3px 20px rgba(233, 240, 243, 0.5);
     text-align: center;
     height: 100%;
     //
@@ -99,6 +99,12 @@
     width: 100vw !important;
     z-index: 0 !important;
     transform: translateY(6px);
+}
+
+.breaker {
+    height: 5px;
+    width: 100%;
+    background-color: $hard-white;
 }
 
 @media (max-width: 1200px) {
