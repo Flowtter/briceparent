@@ -34,7 +34,7 @@ export default function Contact() {
 				<h1>{t('Contact me!')}</h1>
 				<div className={styles.contact}>
 					<a href="mailto:briceparent.it@gmail.com"><img src={mail} alt="mail" /></a>
-					<a href="https://www.linkedin.com/in/TODO" target="_blank" rel="noreferrer"><img src={linkedin} alt="linkedin" /></a>
+					<a href="https://www.linkedin.com/in/brice-parent-4457a21a0/" target="_blank" rel="noreferrer"><img src={linkedin} alt="linkedin" /></a>
 					<a href="https://github.com/Flowtter/" target="_blank" rel="noreferrer"><img src={github} alt="github" /></a>
 				</div>
 			</div>
