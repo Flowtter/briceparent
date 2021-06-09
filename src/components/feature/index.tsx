@@ -83,7 +83,7 @@ export default function Feature() {
 					alt={t('prism\'s logo')}
 					url='https://github.com/prismocr/ocr'
 					title={t('Prism OCR')}
-					description='Prism is an efficient OCR written in C.'
+					description={t('Prism is an efficient OCR written in C.')}
 					technologies={[python, c, latex]}
 				/>
 				<Project

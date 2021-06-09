@@ -22,15 +22,6 @@
     display: none;
 }
 
-.ribbon::before,
-.ribbon::after {
-    position: absolute;
-    z-index: -1;
-    content: '';
-    display: block;
-    border: 5px solid #2980b9;
-}
-
 .ribbon span {
     position: absolute;
     display: block;
@@ -47,8 +38,8 @@
 }
 
 .ribbon {
-    top: -10px;
-    right: -10px;
+    top: 0%;
+    right: 0%;
 }
 
 .ribbon::before,

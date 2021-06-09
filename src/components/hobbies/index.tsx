@@ -74,7 +74,7 @@ function Printing() {
 export default function Hobbies() {
 	const { t } = useTranslation();
 	return (
-		<div>
+		<div className={styles.bigContainer}>
 			<h1 className={styles.introTitle}>{t('Favorites activities')}</h1>
 			<div className={styles.container} id='hobbies'>
 				<Printing />

@@ -1,3 +1,26 @@
 {
-    "Hello": "Bonjour"
+    "Let's start a project": "Commençons un projet",
+    "Would you like to work together?": "Voulez-vous travailler ensemble ?",
+    "We should get in touch then!": "Nous devrions entrer en contact alors !",
+    "Contact me!": "Contactez-moi !",
+    "Highlighted projects": "Projets mis en évidence",
+    "prism's logo": "logo de prism",
+    "Prism OCR": "Prism OCR",
+    "Prism is an efficient OCR written in C.": "Prism est un OCR efficace écrit en C.",
+    "underlook's logo": "logo de underlook",
+    "Underlook": "Underlook",
+    "UnderLook is a videogame based on Overwatch and Paladins in which I was project leader.": "UnderLook est un jeu vidéo basé sur Overwatch et Paladins dans lequel j'étais chef de projet.",
+    "unrailed's logo": "logo de unrailed",
+    "Unrailed AI": "Unrailed IA",
+    "Unrailed AI is an AI for playing the video game Unrailed. It uses computer vision and pathfinding algorithm.": "Unrailed AI est une IA pour le jeu vidéo Unrailed, qui utilise la vision par ordinateur et un algorithme de recherche de chemin.",
+    "Gaming": "Jeux vidéo",
+    "I've been playing Overwatch for over four years, I reached the highest rank there, the \"Top 500 Europeans\". I had the opportunity to play for a year on a team with regular training.": "Je joue à Overwatch depuis plus de quatre ans, j'y ai atteint le plus haut rang, le \"Top 500 Européens\". J'ai eu l'occasion de jouer pendant un an dans une équipe avec un entraînement régulier.",
+    "Programing": "Programmation",
+    "I discovered programming in early 2018 with python. Then I continued with Unity and after 2 years, I moved to Golang and react.": "J'ai découvert la programmation début 2018 avec python. Puis j'ai continué avec Unity et après 2 ans, je suis passé à Golang et react.",
+    "$ cat hello.txt": "$ cat hello.txt",
+    "Hello friend!": "Hello friend!",
+    "I am Brice!": "I am Brice!",
+    "3D Printing": "Impression 3D",
+    "3D printing is a hobby that I have enjoyed doing for a few years now. I have bought one in 2018, since then I print mechanical parts from time to time.": "L'impression 3D est un hobby que j'aime pratiquer depuis quelques années maintenant. J'en ai acheté une en 2018, depuis j'imprime des pièces mécaniques de temps en temps.",
+    "Favorites activities": "Activités préférées"
 }

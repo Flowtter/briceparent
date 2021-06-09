@@ -146,37 +146,27 @@
     .introTitle {
         margin-top: 100px;
     }
-    .container {
-        overflow-x: hidden !important;
-        background-color: lawngreen;
-    }
     .hobby {
         height: auto;
-        vertical-align: top;
-        display: initial;
-        text-align: center;
-        .title {
-            display: none;
-            top: 0;
-        }
-        .subtitle {
-            display: block;
-            width: 100%;
-            margin-top: 25px;
-        }
         >div>svg,
         >svg {
-            margin: auto;
-            margin-top: -30px;
-            margin-bottom: 80px;
+            display: none;
+        }
+        .text {
+            margin-top: 10px;
+        }
+        .title {
+            top: 10px;
         }
         .text {
             position: block;
             width: 90%;
-            margin-bottom: 25px;
+            margin-bottom: 10px;
         }
     }
     .textContainer {
+        display: none;
+        // 
         position: absolute;
         transform: translate(-50%, -260px);
         left: 50%;
