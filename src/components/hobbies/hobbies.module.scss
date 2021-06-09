@@ -147,12 +147,13 @@
         margin-top: 100px;
     }
     .container {
-        overflow-x: hidden;
+        overflow-x: hidden !important;
+        background-color: lawngreen;
     }
     .hobby {
         height: auto;
         vertical-align: top;
-        display: inline;
+        display: initial;
         text-align: center;
         .title {
             display: none;
@@ -179,6 +180,19 @@
         position: absolute;
         transform: translate(-50%, -260px);
         left: 50%;
+        animation: none;
+    }
+    .line1,
+    .line2,
+    .line3 {
+        animation: none !important;
+        // display: block;
+        width: 17em !important;
+    }
+    .cursor1,
+    .cursor2,
+    .cursor3 {
+        display: none;
     }
 }
 

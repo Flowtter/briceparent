@@ -1,12 +1,16 @@
 import React from 'react';
 import { ReactComponent as WavesSvg } from '../../assets/svg/waves.svg';
+// import { useTranslation } from 'react-i18next/';
 
 import styles from './waves.module.scss';
 import './styles.css';
 
+
 export default function Waves() {
+	// const { t } = useTranslation();
 	return (
 		<div className={styles.container}>
+			{/* <div className={styles.ribbon}><span>{t('This website looks')}<br />{t('better on computer.')}</span></div> */}
 			<WavesSvg className={styles.waves} />
 			<div className={styles.otters}>
 				{otterBaby}

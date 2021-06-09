@@ -171,17 +171,30 @@
         transform: translate(-60px, 200%);
     }
     #overwatch>svg {
-        animation: token-phone 20s step-end infinite reverse, nape 20s infinite linear;
+        /* animation: token-phone 20s step-end infinite reverse, nape 20s infinite linear; */
+        animation: none;
+        display: none;
     }
     #overwatch-blinker>svg {
         transform: translate(-22px, 40px);
+        animation: none;
     }
     #overwatch-piggy>svg {
-        animation: piggy-phone 20s step-end infinite;
+        /* animation: piggy-phone 20s step-end infinite; */
+        animation: none;
+        display: none;
     }
     #nape {
         transform: translate(220px, 94px);
-        animation: nape-phone 20s infinite linear;
+        /* animation: nape-phone 20s infinite linear; */
+        animation: none;
+    }
+    #z-axis {
+        transform: translateY(-100px);
+        animation: none;
+    }
+    #y-axis {
+        animation: none;
     }
 }
 

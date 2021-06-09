@@ -28,13 +28,6 @@
     transition: all 100ms;
 }
 
-#otter-rock {
-    width: 10vw;
-    top: 60%;
-    left: 10%;
-    transform: translate(0, 0%);
-}
-
 
 /* @keyframes eyes {
     0% {
@@ -44,6 +37,22 @@
         transform: scaleY(1);
     }
 } */
+
+@media (max-width: 540px) {
+    #otter-baby,
+    #otter-hello {
+        animation: none;
+    }
+    #otter-double {
+        animation: double 7s ease-in-out forwards;
+    }
+    #otter-baby {
+        transform: translate(-255%, 10%);
+    }
+    #otter-hello {
+        transform: translate(-185%, 250%);
+    }
+}
 
 @keyframes baby {
     0%,

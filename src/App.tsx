@@ -10,11 +10,11 @@ import './styles.css';
 function App() {
 	return (
 		<div id='body'>
-			<Waves />
-			<Introduction />
+			{/* <Waves /> */}
+			{/* <Introduction /> */}
 			<Hobbies />
-			<Feature />
-			<Contact />
+			{/* <Feature /> */}
+			{/* <Contact /> */}
 		</div>
 	);
 }
