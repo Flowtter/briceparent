@@ -56,7 +56,7 @@ function Project(props: Props) {
 					<img src={props.image} alt={props.alt} />
 					<div className={styles.shadow} />
 					<div className={`${styles.back} ${styles[props.back]}`}>
-						<div className={styles.softshadow} />
+						{/* <div className={styles.softshadow} /> */}
 						<Elements technologies={props.technologies} />
 					</div>
 				</div>

@@ -39,6 +39,11 @@
     transform: translate(80%, -105%);
 }
 
+.destroy~div {
+    background-color: aqua;
+    color: red !important;
+}
+
 @media (max-width: 768px) {
     .introduction {
         h1 {
