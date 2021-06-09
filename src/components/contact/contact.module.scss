@@ -93,11 +93,12 @@
     outline: 0;
 }
 
-.waves {
+.waves>svg {
     position: flex;
     opacity: 1;
     width: 100vw !important;
     z-index: 0 !important;
+    transform: translateY(6px);
 }
 
 @media (max-width: 1200px) {
