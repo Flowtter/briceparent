@@ -44,11 +44,25 @@
     color: red !important;
 }
 
+.phone {
+    display: none !important;
+}
+
+.pc {
+    display: inital !important;
+}
+
 @media (max-width: 768px) {
     .introduction {
         h1 {
             text-shadow: 0 -0.025em 0 #fff, 0 0.075em 0.05em #2e2e2e;
         }
+    }
+    .phone {
+        display: initial !important;
+    }
+    .pc {
+        display: none !important;
     }
 }
 
@@ -95,7 +109,7 @@
         transform: translate(0px, 30px);
         .text {
             .line {
-                height: 18vw;
+                height: 13vw;
             }
             h1 {
                 font-size: 8vw;

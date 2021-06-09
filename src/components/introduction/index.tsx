@@ -63,13 +63,22 @@ export default function Introduction() {
 										</Hinge>
 									</JackInTheBox>
 								</div>
-								<div className={styles.word}>
+								<div className={`${styles.word} ${styles.pc}`}>
 									<AttentionSeeker effect='bounce' triggerOnce delay={4250}>
 										<Fade cascade triggerOnce delay={4200}>
 											<h1>{t('student!')}</h1>
 										</Fade>
 									</AttentionSeeker>
 								</div>
+							</div>
+						</div>
+						<div className={styles.line}>
+							<div className={`${styles.word} ${styles.phone}`}>
+								<AttentionSeeker effect='bounce' triggerOnce delay={4250}>
+									<Fade cascade triggerOnce delay={4200}>
+										<h1>{t('student!')}</h1>
+									</Fade>
+								</AttentionSeeker>
 							</div>
 						</div>
 					</div>
