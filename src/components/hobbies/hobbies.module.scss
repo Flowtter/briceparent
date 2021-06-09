@@ -127,6 +127,12 @@
     }
 }
 
+@media (max-width: 1050px) {
+    .hobby {
+        width: 65vw;
+    }
+}
+
 @media (max-width: 900px) {
     .introTitle {
         font-size: 2em !important;

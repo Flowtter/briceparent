@@ -9,7 +9,7 @@ export default function Waves() {
 	const { t } = useTranslation();
 	return (
 		<div className={styles.container}>
-			<div className={styles.ribbon}><span>{t('This website looks')}<br />{t('better on computer.')}</span></div>
+			{/* <div className={styles.ribbon}><span>{t('This website looks')}<br />{t('better on computer.')}</span></div> */}
 			{waves}
 			<div className={styles.otters}>
 				{otterBaby}

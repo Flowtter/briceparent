@@ -90,6 +90,9 @@
             }
         }
     }
+    .cross>svg {
+        transform: translate(80%, -120%);
+    }
 }
 
 @media (max-width: 800px) {
