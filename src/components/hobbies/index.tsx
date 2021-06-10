@@ -31,7 +31,7 @@ function Gaming() {
 
 function Coding() {
 	const { t } = useTranslation();
-	const title = t('Programing');
+	const title = t('programming');
 	const description = t('I discovered programming in early 2018 with python. Then I continued with Unity and after 2 years, I moved to Golang and react.');
 	return (
 		<div className={`${styles.hobby} mac`}>
