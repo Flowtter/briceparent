@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import './styles/styles.scss';
 import './i18n';
 
-
 ReactDOM.render(
 	<React.StrictMode>
 		<App />

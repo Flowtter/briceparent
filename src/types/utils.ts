@@ -1,4 +1,4 @@
 export type Vector2 = {
-    x: number;
-    y: number;
-}
+	x: number;
+	y: number;
+};

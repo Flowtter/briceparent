@@ -7,45 +7,75 @@ import mail from '../../assets/svg/mail.svg';
 
 import styles from './contact.module.scss';
 
-
 export default function Contact() {
 	const { t } = useTranslation();
 	return (
 		<div id="footer">
 			{/* <WavesSvg className={styles.waves} /> */}
-			<div className={styles.waves}>
-				{waves}
-			</div>
+			<div className={styles.waves}>{waves}</div>
 			{/* <div className={styles.breaker} /> */}
 			<div className={styles.content}>
 				<div className={styles.container}>
 					<div className={styles.column}>
-						<h2>{t('Let\'s start a project')}</h2>
+						<h2>{t("Let's start a project")}</h2>
 					</div>
 					<div className={styles.column}>
-						<p>{t('Would you like to work together?')}<br />{t('We should get in touch then!')}</p>
+						<p>
+							{t('Would you like to work together?')}
+							<br />
+							{t('We should get in touch then!')}
+						</p>
 					</div>
 					<div className={styles.column}>
 						<a href="mailto:briceparent.it@gmail.com">
-							<button className={styles.button} type="button">{t('Contact me!')}</button>
+							<button className={styles.button} type="button">
+								{t('Contact me!')}
+							</button>
 						</a>
 					</div>
 				</div>
 				<h1>{t('Contact me!')}</h1>
 				<div className={styles.contact}>
-					<a href="mailto:briceparent.it@gmail.com"><img src={mail} alt="mail" /></a>
-					<a href="https://www.linkedin.com/in/brice-parent-4457a21a0/" target="_blank" rel="noreferrer"><img src={linkedin} alt="linkedin" /></a>
-					<a href="https://github.com/Flowtter/" target="_blank" rel="noreferrer"><img src={github} alt="github" /></a>
+					<a href="mailto:briceparent.it@gmail.com">
+						<img src={mail} alt="mail" />
+					</a>
+					<a
+						href="https://www.linkedin.com/in/brice-parent-4457a21a0/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<img src={linkedin} alt="linkedin" />
+					</a>
+					<a
+						href="https://github.com/Flowtter/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<img src={github} alt="github" />
+					</a>
 				</div>
 			</div>
 		</div>
 	);
 }
 
+// prettier-ignore
 const waves = (
-	<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="90%" preserveAspectRatio="xMidYMid" viewBox="0 0 1920 250">
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width="100%"
+		height="90%"
+		preserveAspectRatio="xMidYMid"
+		viewBox="0 0 1920 250"
+	>
 		<g transform="translate(960,125) scale(1,-1) translate(-960,-125)">
-			<linearGradient id="lg-0.8998068733256823" x1="0" x2="1" y1="0" y2="0">
+			<linearGradient
+				id="lg-0.8998068733256823"
+				x1="0"
+				x2="1"
+				y1="0"
+				y2="0"
+			>
 				<stop stopColor="#130f40" offset="0"></stop>
 				<stop stopColor="#130f40" offset="1"></stop>
 			</linearGradient>

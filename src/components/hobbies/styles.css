@@ -1,242 +1,245 @@
 /* todo: responsive */
 
 #piggy {
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    z-index: 10;
-    transform: translate(40px, 107%);
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	z-index: 10;
+	transform: translate(40px, 107%);
 }
 
-#overwatch>svg {
-    z-index: 0;
-    width: 28px;
-    height: 28px;
-    position: absolute;
-    transform: translate(93px, 26px);
-    animation: token 20s step-end infinite reverse, nape 20s infinite linear;
-    clip: rect(28px, 600px, 600px, 0px);
+#overwatch > svg {
+	z-index: 0;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	transform: translate(93px, 26px);
+	animation: token 20s step-end infinite reverse, nape 20s infinite linear;
+	clip: rect(28px, 600px, 600px, 0px);
 }
 
 @keyframes token {
-    1% {
-        opacity: 1;
-    }
-    20% {
-        z-index: 0;
-        transform: translate(93px, 26px);
-    }
-    0% {
-        opacity: 0;
-        animation-timing-function: cubic-bezier(0.065, 0.870, 0.335, 0.775);
-        z-index: 300;
-        transform: translate(93px, 120px) rotate(65deg);
-    }
+	1% {
+		opacity: 1;
+	}
+	20% {
+		z-index: 0;
+		transform: translate(93px, 26px);
+	}
+	0% {
+		opacity: 0;
+		animation-timing-function: cubic-bezier(0.065, 0.87, 0.335, 0.775);
+		z-index: 300;
+		transform: translate(93px, 120px) rotate(65deg);
+	}
 }
 
-#overwatch-piggy>svg {
-    width: 22px;
-    height: 22px;
-    position: absolute;
-    opacity: 1;
-    transform: translate(58px, -190px) rotate(65deg);
-    animation: piggy 20s step-end infinite;
-    z-index: 8;
+#overwatch-piggy > svg {
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	opacity: 1;
+	transform: translate(58px, -190px) rotate(65deg);
+	animation: piggy 20s step-end infinite;
+	z-index: 8;
 }
 
 @keyframes piggy {
-    0% {
-        animation-timing-function: cubic-bezier(0.065, 0.870, 0.000, 1.0);
-        transform: translate(58px, -190px) rotate(65deg);
-        opacity: 0;
-    }
-    40% {
-        animation-timing-function: step-end;
-        transform: translate(58px, 70px) rotate(10deg);
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+	0% {
+		animation-timing-function: cubic-bezier(0.065, 0.87, 0, 1);
+		transform: translate(58px, -190px) rotate(65deg);
+		opacity: 0;
+	}
+	40% {
+		animation-timing-function: step-end;
+		transform: translate(58px, 70px) rotate(10deg);
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 @keyframes nape {
-    1% {
-        clip: rect(28px, 600px, 600px, 0px);
-    }
-    80% {
-        clip: rect(-4px, 600px, 600px, 0px);
-    }
-    100% {
-        clip: rect(-4px, 600px, 600px, 0px);
-        animation-timing-function: step-start;
-    }
+	1% {
+		clip: rect(28px, 600px, 600px, 0px);
+	}
+	80% {
+		clip: rect(-4px, 600px, 600px, 0px);
+	}
+	100% {
+		clip: rect(-4px, 600px, 600px, 0px);
+		animation-timing-function: step-start;
+	}
 }
 
 #z-axis {
-    animation: z-axis 20s infinite linear;
+	animation: z-axis 20s infinite linear;
 }
 
 @keyframes z-axis {
-    80% {
-        /* transform: translate(0, 74px); */
-        transform: translateY(-16.2%);
-    }
+	80% {
+		/* transform: translate(0, 74px); */
+		transform: translateY(-16.2%);
+	}
 }
 
 #y-axis {
-    animation: y-axis 20s infinite linear;
+	animation: y-axis 20s infinite linear;
 }
 
 @keyframes y-axis {
-    3% {
-        transform: translate(3%, 0);
-    }
-    6% {
-        transform: translate(-5%, 0);
-    }
-    12% {
-        transform: translate(4.5%, 0);
-    }
-    18% {
-        transform: translate(-7%, 0);
-    }
-    25% {
-        transform: translate(6%, 0);
-    }
-    32% {
-        transform: translate(-8%, 0);
-    }
-    40% {
-        transform: translate(6%, 0);
-    }
-    48% {
-        transform: translate(-7.5%, 0);
-    }
-    56% {
-        transform: translate(5%, 0);
-    }
-    62% {
-        transform: translate(-5%, 0);
-    }
-    68% {
-        transform: translate(1.33%, 0);
-    }
-    74% {
-        transform: translate(0%, 0);
-    }
-    92% {
-        transform: translate(-15%, 0);
-    }
+	3% {
+		transform: translate(3%, 0);
+	}
+	6% {
+		transform: translate(-5%, 0);
+	}
+	12% {
+		transform: translate(4.5%, 0);
+	}
+	18% {
+		transform: translate(-7%, 0);
+	}
+	25% {
+		transform: translate(6%, 0);
+	}
+	32% {
+		transform: translate(-8%, 0);
+	}
+	40% {
+		transform: translate(6%, 0);
+	}
+	48% {
+		transform: translate(-7.5%, 0);
+	}
+	56% {
+		transform: translate(5%, 0);
+	}
+	62% {
+		transform: translate(-5%, 0);
+	}
+	68% {
+		transform: translate(1.33%, 0);
+	}
+	74% {
+		transform: translate(0%, 0);
+	}
+	92% {
+		transform: translate(-15%, 0);
+	}
 }
 
-#overwatch-blinker>svg {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    transform: translate(75px, -58px);
-    animation: flicker 5s linear infinite;
-    z-index: 5;
+#overwatch-blinker > svg {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	transform: translate(75px, -58px);
+	animation: flicker 5s linear infinite;
+	z-index: 5;
 }
 
 @keyframes flicker {
-    0%,
-    19.99999%,
-    22%,
-    62.99999%,
-    64%,
-    64.99999%,
-    70%,
-    100% {
-        opacity: .85;
-        filter: drop-shadow(0px 1px 2px #8795a87c) drop-shadow(0px -1px 2px #8795a87c) drop-shadow(-1px 0px 2px #8795a87c) drop-shadow(1px 0px 2px #8795a87c);
-    }
-    20%,
-    21.99999%,
-    63%,
-    63.99999%,
-    65%,
-    69.99999% {
-        opacity: 0.3;
-        filter: none;
-    }
+	0%,
+	19.99999%,
+	22%,
+	62.99999%,
+	64%,
+	64.99999%,
+	70%,
+	100% {
+		opacity: 0.85;
+		filter: drop-shadow(0px 1px 2px #8795a87c)
+			drop-shadow(0px -1px 2px #8795a87c)
+			drop-shadow(-1px 0px 2px #8795a87c)
+			drop-shadow(1px 0px 2px #8795a87c);
+	}
+	20%,
+	21.99999%,
+	63%,
+	63.99999%,
+	65%,
+	69.99999% {
+		opacity: 0.3;
+		filter: none;
+	}
 }
 
-#mac>svg>#light>path {
-    opacity: 0;
+#mac > svg > #light > path {
+	opacity: 0;
 }
 
 @media (max-width: 540px) {
-    #piggy {
-        transform: translate(-60px, 200%);
-    }
-    #overwatch>svg {
-        /* animation: token-phone 20s step-end infinite reverse, nape 20s infinite linear; */
-        animation: none;
-        display: none;
-    }
-    #overwatch-blinker>svg {
-        transform: translate(-22px, 40px);
-        animation: none;
-    }
-    #overwatch-piggy>svg {
-        /* animation: piggy-phone 20s step-end infinite; */
-        animation: none;
-        display: none;
-    }
-    #nape {
-        transform: translate(220px, 94px);
-        /* animation: nape-phone 20s infinite linear; */
-        animation: none;
-    }
-    #z-axis {
-        transform: translateY(-100px);
-        animation: none;
-    }
-    #y-axis {
-        animation: none;
-    }
+	#piggy {
+		transform: translate(-60px, 200%);
+	}
+	#overwatch > svg {
+		/* animation: token-phone 20s step-end infinite reverse, nape 20s infinite linear; */
+		animation: none;
+		display: none;
+	}
+	#overwatch-blinker > svg {
+		transform: translate(-22px, 40px);
+		animation: none;
+	}
+	#overwatch-piggy > svg {
+		/* animation: piggy-phone 20s step-end infinite; */
+		animation: none;
+		display: none;
+	}
+	#nape {
+		transform: translate(220px, 94px);
+		/* animation: nape-phone 20s infinite linear; */
+		animation: none;
+	}
+	#z-axis {
+		transform: translateY(-100px);
+		animation: none;
+	}
+	#y-axis {
+		animation: none;
+	}
 }
 
 @keyframes token-phone {
-    1% {
-        opacity: 1;
-    }
-    20% {
-        transform: translate(-6px, 126px);
-        z-index: 0;
-    }
-    0% {
-        opacity: 0;
-        animation-timing-function: cubic-bezier(0.065, 0.870, 0.335, 0.775);
-        z-index: 300;
-        transform: translate(-6px, 230px) rotate(65deg);
-    }
+	1% {
+		opacity: 1;
+	}
+	20% {
+		transform: translate(-6px, 126px);
+		z-index: 0;
+	}
+	0% {
+		opacity: 0;
+		animation-timing-function: cubic-bezier(0.065, 0.87, 0.335, 0.775);
+		z-index: 300;
+		transform: translate(-6px, 230px) rotate(65deg);
+	}
 }
 
 @keyframes piggy-phone {
-    0% {
-        animation-timing-function: cubic-bezier(0.065, 0.870, 0.000, 1.0);
-        transform: translate(-42px, -110px) rotate(65deg);
-        opacity: 0;
-    }
-    40% {
-        animation-timing-function: step-end;
-        transform: translate(-42px, 170px) rotate(10deg);
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+	0% {
+		animation-timing-function: cubic-bezier(0.065, 0.87, 0, 1);
+		transform: translate(-42px, -110px) rotate(65deg);
+		opacity: 0;
+	}
+	40% {
+		animation-timing-function: step-end;
+		transform: translate(-42px, 170px) rotate(10deg);
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 @keyframes nape-phone {
-    80% {
-        transform: translate(220px, 61px);
-        opacity: 1;
-    }
-    100% {
-        transform: translate(0px, -20px);
-        opacity: 0;
-    }
+	80% {
+		transform: translate(220px, 61px);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(0px, -20px);
+		opacity: 0;
+	}
 }

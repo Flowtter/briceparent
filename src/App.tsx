@@ -10,24 +10,23 @@ import Loading from './components/loading';
 
 import './styles.css';
 
-
 // const Waves = React.lazy(() => import('./components/waves'));
 
 const Waves = React.lazy(() => {
-	return new Promise(resolve => setTimeout(resolve, 500)).then(
+	return new Promise((resolve) => setTimeout(resolve, 500)).then(
 		() => import('./components/waves')
 	);
 });
 
 const Introduction = React.lazy(() => {
-	return new Promise(resolve => setTimeout(resolve, 1000)).then(
+	return new Promise((resolve) => setTimeout(resolve, 1000)).then(
 		() => import('./components/introduction')
 	);
 });
 
 function App() {
 	return (
-		<div id='body'>
+		<div id="body">
 			<Suspense fallback={<Loading />}>
 				<Waves />
 				<Introduction />

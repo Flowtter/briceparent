@@ -34,7 +34,9 @@ function Elements(props: Elt) {
 		const name = tech.split('/');
 		const last = name[name.length - 1].split('.');
 		return (
-			<li key={index}>{last[0]} <img src={tech} alt={`${last[0]}'s logo`} /></li>
+			<li key={index}>
+				{last[0]} <img src={tech} alt={`${last[0]}'s logo`} />
+			</li>
 		);
 	}
 	return (
@@ -42,13 +44,15 @@ function Elements(props: Elt) {
 	);
 }
 
-
-
 function Project(props: Props) {
 	return (
 		<div className={styles.project}>
 			<div className={styles.text}>
-				<h1><a href={props.url} target="_blank" rel="noreferrer">{props.title}</a></h1>
+				<h1>
+					<a href={props.url} target="_blank" rel="noreferrer">
+						{props.title}
+					</a>
+				</h1>
 				<p className={styles.description}>{props.description}</p>
 			</div>
 			<a href={props.url} target="_blank" rel="noreferrer">
@@ -63,10 +67,8 @@ function Project(props: Props) {
 			</a>
 			<p className={styles.subdescription}>{props.description}</p>
 		</div>
-
 	);
 }
-
 
 export default function Feature() {
 	const { t } = useTranslation();
@@ -78,31 +80,35 @@ export default function Feature() {
 			</div>
 			<div className={styles.container}>
 				<Project
+					image={unrailed}
+					back="unrailed"
+					alt={t("unrailed's logo")}
+					url="https://github.com/Flowtter/unrailed-ai"
+					title={t('Unrailed AI')}
+					description={t(
+						'Unrailed AI is an AI for playing the video game Unrailed. It uses computer vision and pathfinding algorithm.'
+					)}
+					technologies={[python]}
+				/>
+				<Project
 					image={prism}
-					back='prism'
-					alt={t('prism\'s logo')}
-					url='https://github.com/prismocr/ocr'
+					back="prism"
+					alt={t("prism's logo")}
+					url="https://github.com/prismocr/ocr"
 					title={t('Prism OCR')}
 					description={t('Prism is an efficient OCR written in C.')}
 					technologies={[python, c, latex]}
 				/>
 				<Project
 					image={underlook}
-					back='underlook'
-					alt={t('underlook\'s logo')}
-					url='https://github.com/The-Under-Project/UnderLook'
+					back="underlook"
+					alt={t("underlook's logo")}
+					url="https://github.com/The-Under-Project/UnderLook"
 					title={t('Underlook')}
-					description={t('UnderLook is a videogame based on Overwatch and Paladins in which I was project leader.')}
+					description={t(
+						'UnderLook is a videogame based on Overwatch and Paladins in which I was project leader.'
+					)}
 					technologies={[unity, csharp, latex]}
-				/>
-				<Project
-					image={unrailed}
-					back='unrailed'
-					alt={t('unrailed\'s logo')}
-					url='https://github.com/Flowtter/unrailed-ai'
-					title={t('Unrailed AI')}
-					description={t('Unrailed AI is an AI for playing the video game Unrailed. It uses computer vision and pathfinding algorithm.')}
-					technologies={[python, unity]}
 				/>
 			</div>
 		</div>

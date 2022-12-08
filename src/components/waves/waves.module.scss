@@ -1,71 +1,71 @@
 .waves {
-    position: relative;
-    opacity: 1;
-    top: 0%;
-    // width: 90%;
+	position: relative;
+	opacity: 1;
+	top: 0%;
+	// width: 90%;
 }
 
 .otters svg {
-    position: absolute;
-    z-index: 2;
-    opacity: 1;
-    width: 15vw;
-    height: auto
+	position: absolute;
+	z-index: 2;
+	opacity: 1;
+	width: 15vw;
+	height: auto;
 }
 
 .ribbon {
-    z-index: 5;
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    position: absolute;
-    display: none;
+	z-index: 5;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	position: absolute;
+	display: none;
 }
 
 .ribbon span {
-    position: absolute;
-    display: block;
-    width: 225px;
-    padding: 15px 0;
-    background-color: #3498db;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-    color: #fff;
-    font: 700 18px/1 'Lato', sans-serif;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 0.5em !important;
+	position: absolute;
+	display: block;
+	width: 225px;
+	padding: 15px 0;
+	background-color: #3498db;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	color: #fff;
+	font: 700 18px/1 'Lato', sans-serif;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 0.5em !important;
 }
 
 .ribbon {
-    top: 0%;
-    right: 0%;
+	top: 0%;
+	right: 0%;
 }
 
 .ribbon::before,
 .ribbon::after {
-    border-top-color: transparent;
-    border-right-color: transparent;
+	border-top-color: transparent;
+	border-right-color: transparent;
 }
 
 .ribbon::before {
-    top: 0;
-    left: 0;
+	top: 0;
+	left: 0;
 }
 
 .ribbon::after {
-    bottom: 0;
-    right: 0;
+	bottom: 0;
+	right: 0;
 }
 
 .ribbon span {
-    left: -25px;
-    top: 30px;
-    transform: rotate(45deg);
+	left: -25px;
+	top: 30px;
+	transform: rotate(45deg);
 }
 
 @media (max-width: 540px) {
-    .ribbon {
-        display: initial;
-    }
+	.ribbon {
+		display: initial;
+	}
 }
