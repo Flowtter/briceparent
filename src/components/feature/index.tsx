@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import prism from '../../assets/png/shape.png';
 import underlook from '../../assets/png/underlook.png';
 import unrailed from '../../assets/png/unrailed.png';
+import crispy from '../../assets/png/crispy.png';
 
 //
 import c from '../../assets/svg/logos/c.svg';
@@ -11,6 +12,9 @@ import csharp from '../../assets/svg/logos/csharp.svg';
 import unity from '../../assets/svg/logos/unity.svg';
 import python from '../../assets/svg/logos/python.svg';
 import latex from '../../assets/svg/logos/latex.svg';
+import svelte from '../../assets/svg/logos/svelte.svg';
+import docker from '../../assets/svg/logos/docker.svg';
+import typescript from '../../assets/svg/logos/typescript.svg';
 //
 
 import styles from './feature.module.scss';
@@ -32,10 +36,10 @@ type Elt = {
 function Elements(props: Elt) {
 	function Element(tech: string, index: number) {
 		const name = tech.split('/');
-		const last = name[name.length - 1].split('.');
+		const slug = name[name.length - 1].split('.');
 		return (
 			<li key={index}>
-				{last[0]} <img src={tech} alt={`${last[0]}'s logo`} />
+				{slug[0]} <img src={tech} alt={`${slug[0]}'s logo`} />
 			</li>
 		);
 	}
@@ -46,7 +50,11 @@ function Elements(props: Elt) {
 
 function Project(props: Props) {
 	return (
-		<div className={styles.project}>
+		// eslint-disable-next-line jsx-a11y/no-static-element-interactions
+		<div
+			className={styles.project}
+			onClick={() => window.open(props.url, '_blank')}
+		>
 			<div className={styles.text}>
 				<h1>
 					<a href={props.url} target="_blank" rel="noreferrer">
@@ -79,6 +87,17 @@ export default function Feature() {
 				<h1 className={styles.title}>{t('Highlighted projects')}</h1>
 			</div>
 			<div className={styles.container}>
+				<Project
+					image={crispy}
+					back="crispy"
+					alt="crispy"
+					url="https://github.com/Flowtter/crispy"
+					title="Crispy"
+					description={t(
+						'Crispy is a machine-learning algorithm to make video-games montages efficiently. It uses a neural network to detect highlights in the video-game frames.'
+					)}
+					technologies={[python, svelte, docker, typescript]}
+				/>
 				<Project
 					image={unrailed}
 					back="unrailed"

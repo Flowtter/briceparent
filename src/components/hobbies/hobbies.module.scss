@@ -1,4 +1,5 @@
 @import '../../styles/constants.scss';
+
 .container {
 	// margin-top: 500px;
 	display: flex;
@@ -21,6 +22,7 @@
 	//
 	align-items: center;
 	display: flex;
+
 	img,
 	svg {
 		z-index: 2;
@@ -30,22 +32,25 @@
 		height: 200px;
 		width: 200px;
 	}
+
 	.text {
 		width: calc(100% - 250px - 10%);
 		padding-left: 2.5%;
 		padding-right: 2.5%;
 		margin: auto;
 	}
+
 	h1 {
 		font-family: 'Source Sans Pro', sans-serif;
 		letter-spacing: initial;
-		color: $hard-white;
+		color: $light-black;
 		text-shadow: none;
 		text-align: center;
 		font-size: 2em;
 		margin-top: -3%;
 		font-weight: bold;
 	}
+
 	p {
 		font-family: 'Source Sans Pro', sans-serif;
 		margin-top: -50px;
@@ -54,7 +59,9 @@
 		font-size: 1.2em;
 		font-weight: bolder;
 		text-align: justify;
+		padding-top: 3px;
 	}
+
 	.subtitle {
 		display: none;
 	}
@@ -68,6 +75,7 @@
 	width: 120px;
 	height: 80px;
 	transform: translate(60px, -42px);
+
 	p {
 		margin: 2px;
 		text-align: left;
@@ -78,31 +86,38 @@
 		font-size: 1.1em;
 		font-family: 'Source Sans Pro', sans-serif;
 	}
+
 	span {
 		color: #fff;
 		font-weight: bold;
 	}
+
 	.line1 {
 		color: #9cd9f0;
 		animation: type 10s steps(20, end) forwards infinite,
 			shake 1s ease-in-out infinite alternate;
 	}
+
 	.cursor1 {
 		animation: blink 10s infinite linear;
 	}
+
 	.line2 {
 		color: #cdee69;
 		animation: typeSecond 10s 3.333s steps(20, end) forwards infinite,
 			shake 1s ease-in-out infinite alternate;
 	}
+
 	.cursor2 {
 		animation: blink 10s 3.333s infinite linear;
 	}
+
 	.line3 {
 		color: #ff00ff;
 		animation: typeThird 10s 6.666s steps(20, end) forwards infinite,
 			shake 1s ease-in-out infinite alternate;
 	}
+
 	.cursor3 {
 		animation: blink 10s 6.666s infinite linear;
 	}
@@ -113,6 +128,7 @@
 		h1 {
 			font-size: 3em;
 		}
+
 		h3 {
 			font-size: 2em;
 		}
@@ -124,13 +140,14 @@
 		h1 {
 			font-size: 2.5em;
 		}
+
 		h3 {
 			font-size: 1.5em;
 		}
 	}
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1150px) {
 	.hobby {
 		width: 65vw;
 	}
@@ -141,10 +158,12 @@
 		font-size: 2em !important;
 		text-shadow: 0 4px 3px #2e2e2e;
 	}
+
 	.hobby {
 		min-width: unset;
 		width: 92vw;
 		height: 350px;
+
 		.text {
 			width: calc(100% - 200px - 10%);
 		}
@@ -155,24 +174,30 @@
 	.introTitle {
 		margin-top: 100px;
 	}
+
 	.hobby {
 		height: auto;
-		> div > svg,
-		> svg {
+
+		>div>svg,
+		>svg {
 			display: none;
 		}
+
 		.text {
 			margin-top: 10px;
 		}
+
 		.title {
 			top: 10px;
 		}
+
 		.text {
 			position: block;
 			width: 90%;
 			margin-bottom: 10px;
 		}
 	}
+
 	.textContainer {
 		display: none;
 		//
@@ -181,6 +206,7 @@
 		left: 50%;
 		animation: none;
 	}
+
 	.line1,
 	.line2,
 	.line3 {
@@ -188,6 +214,7 @@
 		// display: block;
 		width: 17em !important;
 	}
+
 	.cursor1,
 	.cursor2,
 	.cursor3 {
@@ -199,31 +226,40 @@
 	0% {
 		opacity: 0;
 	}
+
 	4% {
 		opacity: 1;
 	}
+
 	8% {
 		opacity: 0;
 	}
+
 	12% {
 		opacity: 1;
 	}
+
 	16% {
 		opacity: 0;
 	}
+
 	20% {
 		opacity: 1;
 	}
+
 	24% {
 		opacity: 0;
 	}
+
 	28.5% {
 		opacity: 1;
 	}
+
 	33.333% {
 		animation-timing-function: step-end;
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 0;
 	}
@@ -233,6 +269,7 @@
 	10% {
 		width: 0em;
 	}
+
 	10%,
 	100% {
 		width: 17em;
@@ -240,10 +277,12 @@
 }
 
 @keyframes typeSecond {
+
 	5%,
 	66.66% {
 		width: 17em;
 	}
+
 	66.66% {
 		animation-timing-function: step-end;
 		width: 0;
@@ -251,10 +290,12 @@
 }
 
 @keyframes typeThird {
+
 	5%,
 	33.33% {
 		width: 17em;
 	}
+
 	33.33% {
 		animation-timing-function: step-end;
 		width: 0;
@@ -265,6 +306,7 @@
 	88% {
 		opacity: 1;
 	}
+
 	95%,
 	100% {
 		opacity: 0;
@@ -272,6 +314,7 @@
 }
 
 @keyframes shake {
+
 	5%,
 	15%,
 	25%,
@@ -283,6 +326,7 @@
 		filter: blur(0.02em);
 		transform: translateY(0.01em) rotate(0deg);
 	}
+
 	10%,
 	30%,
 	40%,
@@ -293,16 +337,19 @@
 		filter: blur(0.02em);
 		transform: translateY(-0.01em) rotate(0deg);
 	}
+
 	20%,
 	60% {
 		filter: blur(0.04em);
 		transform: translate(-0.01em, 0.01em) rotate(0deg);
 	}
+
 	45%,
 	85% {
 		filter: blur(0.03em);
 		transform: translate(0.01em, -0.01em) rotate(0deg);
 	}
+
 	100% {
 		filter: blur(0.007em);
 	}
