@@ -99,14 +99,13 @@
 	.introduction {
 		transform: translate(0px, 50px);
 		width: 45vw;
-		// width: 290px;
 	}
 	.cross > svg {
-		transform: translate(80%, -130%);
+		transform: translate(80%, -140%);
 	}
 }
 
-@media (max-width: 540px) {
+@media (max-width: 600px) {
 	.introduction {
 		width: 70vw;
 		transform: translate(0px, 30px);
@@ -121,6 +120,6 @@
 		}
 	}
 	.cross > svg {
-		transform: translate(80%, calc(-182% + 8vw));
+		transform: translate(80%, -155%);
 	}
 }

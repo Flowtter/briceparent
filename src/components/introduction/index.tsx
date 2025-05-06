@@ -77,7 +77,7 @@ export default function Introduction() {
 									<JackInTheBox triggerOnce delay={1800}>
 										<Hinge cascade triggerOnce delay={3200}>
 											<div>
-												<h1>{t('Developer')}</h1>
+												<h1>Student</h1>
 												<Fade
 													cascade
 													triggerOnce
@@ -97,7 +97,7 @@ export default function Introduction() {
 										delay={4250}
 									>
 										<Fade cascade triggerOnce delay={4200}>
-											<h1>{t('student!')}</h1>
+											<h1>Developer!</h1>
 										</Fade>
 									</AttentionSeeker>
 								</div>
@@ -111,7 +111,7 @@ export default function Introduction() {
 									delay={4250}
 								>
 									<Fade cascade triggerOnce delay={4200}>
-										<h1>{t('student!')}</h1>
+										<h1>Developer!</h1>
 									</Fade>
 								</AttentionSeeker>
 							</div>

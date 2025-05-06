@@ -5,6 +5,8 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: auto;
 }
 
 .hobby {
@@ -12,8 +14,9 @@
 	box-shadow: 0px 0px 3px $hard-white;
 	border-radius: 10px;
 	//
-	width: 46vw;
-	min-width: 500px;
+	width: 45vw;
+	max-width: 580px;
+	min-width: 200px;
 	height: 250px;
 	//
 	margin: auto;
@@ -83,7 +86,7 @@
 		white-space: normal;
 		overflow: hidden;
 		width: 0;
-		font-size: 1.1em;
+		font-size: 1.05em;
 		font-family: 'Source Sans Pro', sans-serif;
 	}
 
